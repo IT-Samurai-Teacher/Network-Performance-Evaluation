@@ -1,1 +1,170 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Latency Reference Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header, .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #0066cc;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .header a, .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header a:hover, .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .table-container {
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+
+        .tab-excellent { background-color: #d4edda; }
+        .tab-good { background-color: #fff3cd; }
+        .tab-fair { background-color: #ffeeba; }
+        .tab-poor { background-color: #f8d7da; }
+        .tab-critical { background-color: #f5c6cb; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="https://www.youtube.com/@ITSamuraiTeacher">IT SAMURAI TEACHER - Network Latency Reference Guide</a>
+</div>
+
+<div class="table-container">
+    <table>
+        <tr>
+            <th>Network Type</th>
+            <th class="tab-excellent">Excellent</th>
+            <th class="tab-good">Good</th>
+            <th class="tab-fair">Fair</th>
+            <th class="tab-poor">Poor</th>
+            <th class="tab-critical">Critical</th>
+            <th>Common Issues</th>
+        </tr>
+        <tr>
+            <td>Local Router</td>
+            <td class="tab-excellent">1-3ms</td>
+            <td class="tab-good">4-10ms</td>
+            <td class="tab-fair">11-20ms</td>
+            <td class="tab-poor">&gt;20ms</td>
+            <td class="tab-critical">&gt;50ms</td>
+            <td>Wi-Fi interference, Network congestion</td>
+        </tr>
+        <tr>
+            <td>Local Network Devices</td>
+            <td class="tab-excellent">1-5ms</td>
+            <td class="tab-good">6-15ms</td>
+            <td class="tab-fair">16-30ms</td>
+            <td class="tab-poor">&gt;30ms</td>
+            <td class="tab-critical">&gt;50ms</td>
+            <td>Network loops, Switch issues</td>
+        </tr>
+        <tr>
+            <td>ISP Gateway</td>
+            <td class="tab-excellent">5-10ms</td>
+            <td class="tab-good">11-20ms</td>
+            <td class="tab-fair">21-30ms</td>
+            <td class="tab-poor">&gt;30ms</td>
+            <td class="tab-critical">&gt;50ms</td>
+            <td>ISP congestion, Modem issues</td>
+        </tr>
+        <tr>
+            <td>CDN Services</td>
+            <td class="tab-excellent">5-15ms</td>
+            <td class="tab-good">16-30ms</td>
+            <td class="tab-fair">31-50ms</td>
+            <td class="tab-poor">&gt;50ms</td>
+            <td class="tab-critical">&gt;100ms</td>
+            <td>Routing issues, DNS problems</td>
+        </tr>
+        <tr>
+            <td>Regional Websites</td>
+            <td class="tab-excellent">10-20ms</td>
+            <td class="tab-good">21-40ms</td>
+            <td class="tab-fair">41-60ms</td>
+            <td class="tab-poor">&gt;60ms</td>
+            <td class="tab-critical">&gt;100ms</td>
+            <td>ISP routing, Server load</td>
+        </tr>
+        <tr>
+            <td>Cloud Services</td>
+            <td class="tab-excellent">15-25ms</td>
+            <td class="tab-good">26-50ms</td>
+            <td class="tab-fair">51-80ms</td>
+            <td class="tab-poor">&gt;80ms</td>
+            <td class="tab-critical">&gt;150ms</td>
+            <td>Region selection, Service tier</td>
+        </tr>
+        <tr>
+            <td>Gaming Servers</td>
+            <td class="tab-excellent">5-20ms</td>
+            <td class="tab-good">21-50ms</td>
+            <td class="tab-fair">51-100ms</td>
+            <td class="tab-poor">&gt;100ms</td>
+            <td class="tab-critical">&gt;150ms</td>
+            <td>Server selection, QoS settings</td>
+        </tr>
+        <tr>
+            <td>VoIP/Video Calls</td>
+            <td class="tab-excellent">10-30ms</td>
+            <td class="tab-good">31-60ms</td>
+            <td class="tab-fair">61-100ms</td>
+            <td class="tab-poor">&gt;100ms</td>
+            <td class="tab-critical">&gt;150ms</td>
+            <td>Jitter, Bandwidth</td>
+        </tr>
+        <tr>
+            <td>International Sites</td>
+            <td class="tab-excellent">50-100ms</td>
+            <td class="tab-good">101-150ms</td>
+            <td class="tab-fair">151-200ms</td>
+            <td class="tab-poor">&gt;200ms</td>
+            <td class="tab-critical">&gt;300ms</td>
+            <td>Geographic distance, Undersea cables</td>
+        </tr>
+    </table>
+
+    <p><strong>Note:</strong> Values are guidelines and may vary based on location and infrastructure. Always test at different times of the day for accurate assessment and compare results across multiple services for better diagnosis.</p>
+</div>
+
+<div class="footer">
+    <a href="https://www.youtube.com/@ITSamuraiTeacher">Subscribe to IT Samurai Teacher for more tech tutorials!</a>
+</div>
+
+</body>
+</html>
